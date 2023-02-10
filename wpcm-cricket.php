@@ -1,14 +1,13 @@
 <?php
 /**
  * Plugin Name: WPCM Cricket
- * Version: 1.1.2
+ * Version: 1.1.3
  * Plugin URI: https://wpclubmanager.com
  * Description: An extension for the WP Club Manager sports club plugin which adds extra features for cricket clubs.
- * Author: Clubpress
+ * Author: WP Club Manager
  * Author URI: https://wpclubmanager.com
  * Requires at least: 4.6
- * Tested up to: 5.2
- * 
+ *
  * Text Domain: wpcm-cricket
  * Domain Path: /languages/
  *
@@ -26,7 +25,7 @@ if ( in_array( 'wp-club-manager/wpclubmanager.php', apply_filters( 'active_plugi
 
 	include_once( 'admin/admin-player-cricket.php' );
 	include_once( 'admin/admin-match-lineup.php' );
-    
+
 	remove_action( 'wpclubmanager_single_match_details', 'wpclubmanager_template_single_match_lineup', 5 );
 
   add_action( 'wpclubmanager_single_player_info', 'wpcm_cricket_player_styles_display', 15 );
@@ -179,10 +178,10 @@ if ( in_array( 'wp-club-manager/wpclubmanager.php', apply_filters( 'active_plugi
 		return $outs;
 	}
 
-    function wpcm_cricket_player_styles_display() { 
-		
+    function wpcm_cricket_player_styles_display() {
+
 		global $post;
-		
+
 		$batting = get_post_meta( $post->ID, '_wpcm_cricket_batting', true );
 		$bowling = get_post_meta( $post->ID, '_wpcm_cricket_bowling', true );?>
 
@@ -203,14 +202,14 @@ if ( in_array( 'wp-club-manager/wpclubmanager.php', apply_filters( 'active_plugi
 					<?php echo $bowling; ?>
 				</td>
 			</tr>
-		</table>	
+		</table>
     <?php
 	}
 
 	function wpcm_cricket_toss_display() {
-	
+
 		global $post;
-		
+
 		$toss = get_post_meta( $post->ID, '_wpcm_cricket_match_toss', true ); ?>
 
 		<div class="wpcm-match-referee">
@@ -224,31 +223,31 @@ if ( in_array( 'wp-club-manager/wpclubmanager.php', apply_filters( 'active_plugi
 	}
 
 	function wpcm_cricket_plugin_path() {
- 
-		return untrailingslashit( plugin_dir_path( __FILE__ ) ); 
+
+		return untrailingslashit( plugin_dir_path( __FILE__ ) );
 	}
 
 	function wpcm_cricket_wpclubmanager_locate_template( $template, $template_name, $template_path ) {
- 
+
 		$_template = $template;
-		
+
 		if ( ! $template_path ) {
 			$template_path = WPCM_TEMPLATE_PATH;
 		}
-		
+
 		$plugin_path  = wpcm_cricket_plugin_path() . '/templates/';
-		
+
 		$template = locate_template( array( trailingslashit( $template_path ) . $template_name, $template_name ) );
-		
+
 		if ( ! $template && file_exists( $plugin_path . $template_name ) ) {
 			$template = $plugin_path . $template_name;
 		}
-		
+
 		if ( ! $template ) {
 			$template = $_template;
 		}
-		
-		return $template;	
+
+		return $template;
 	}
 
 	function wpcm_cricket_scoreboard() {
