@@ -1,0 +1,376 @@
+# Copyright (C) 2023 WP Club Manager
+# This file is distributed under the same license as the WPCM Cricket package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCM Cricket 1.1.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpcm-cricket\n"
+"POT-Creation-Date: 2023-02-10 09:38:41+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: admin/admin-player-cricket.php:9
+msgid "Player Styles"
+msgstr ""
+
+#: admin/admin-player-cricket.php:19 wpcm-cricket.php:191
+msgid "Batting Style"
+msgstr ""
+
+#: admin/admin-player-cricket.php:21
+msgid "Right-handed"
+msgstr ""
+
+#: admin/admin-player-cricket.php:22
+msgid "Left-handed"
+msgstr ""
+
+#: admin/admin-player-cricket.php:28 wpcm-cricket.php:199
+msgid "Bowling Style"
+msgstr ""
+
+#: admin/admin-player-cricket.php:30
+msgid "None"
+msgstr ""
+
+#: admin/admin-player-cricket.php:31
+msgid "Right-arm fast"
+msgstr ""
+
+#: admin/admin-player-cricket.php:32
+msgid "Right-arm fast medium"
+msgstr ""
+
+#: admin/admin-player-cricket.php:33
+msgid "Right-arm medium fast"
+msgstr ""
+
+#: admin/admin-player-cricket.php:34
+msgid "Right-arm medium"
+msgstr ""
+
+#: admin/admin-player-cricket.php:35
+msgid "Left-arm fast"
+msgstr ""
+
+#: admin/admin-player-cricket.php:36
+msgid "Left-arm fast medium"
+msgstr ""
+
+#: admin/admin-player-cricket.php:37
+msgid "Left-arm medium fast"
+msgstr ""
+
+#: admin/admin-player-cricket.php:38
+msgid "Left-arm medium"
+msgstr ""
+
+#: admin/admin-player-cricket.php:39
+msgid "Off break"
+msgstr ""
+
+#: admin/admin-player-cricket.php:40
+msgid "Leg break"
+msgstr ""
+
+#: admin/admin-player-cricket.php:41
+msgid "Slow left-arm orthodox"
+msgstr ""
+
+#: admin/admin-player-cricket.php:42
+msgid "Slow left-arm chinaman"
+msgstr ""
+
+#: admin/admin-player-cricket.php:63
+msgid "Toss"
+msgstr ""
+
+#: admin/admin-player-cricket.php:65 wpcm-cricket.php:217
+msgid "Home team win toss"
+msgstr ""
+
+#: admin/admin-player-cricket.php:66 wpcm-cricket.php:219
+msgid "Away team win toss"
+msgstr ""
+
+#: templates/shortcodes/players.php:24 templates/single-match/scorecard.php:128
+#: templates/single-player/stats-table.php:34
+msgid "O"
+msgstr ""
+
+#: templates/single-match/lineup-row-cricket.php:26 wpcm-cricket.php:127
+msgid "Player of Match"
+msgstr ""
+
+#: templates/single-match/scorecard.php:44 wpcm-cricket.php:67
+msgid "Batting &amp; Fielding"
+msgstr ""
+
+#: templates/single-match/scorecard.php:56
+#: templates/single-match/scorecard.php:121
+msgid "Name"
+msgstr ""
+
+#: templates/single-match/scorecard.php:67
+msgid "SR"
+msgstr ""
+
+#: templates/single-match/scorecard.php:88
+msgid "Extras:"
+msgstr ""
+
+#: templates/single-match/scorecard.php:97
+msgid "Total:"
+msgstr ""
+
+#: templates/single-match/scorecard.php:100
+msgid "for %s wickets"
+msgstr ""
+
+#: templates/single-match/scorecard.php:101
+msgid "%s overs"
+msgstr ""
+
+#: templates/single-match/scorecard.php:109 wpcm-cricket.php:68
+msgid "Bowling"
+msgstr ""
+
+#: templates/single-match/scorecard.php:137
+msgid "Econ"
+msgstr ""
+
+#: templates/single-player/stats.php:36 templates/single-player/stats.php:87
+msgid "All %s"
+msgstr ""
+
+#: templates/single-player/stats.php:36 templates/single-player/stats.php:87
+msgid "Seasons"
+msgstr ""
+
+#: wpcm-cricket.php:40
+msgid "Cricket"
+msgstr ""
+
+#: wpcm-cricket.php:72
+msgid "Innings"
+msgstr ""
+
+#: wpcm-cricket.php:77 wpcm-cricket.php:117
+msgid "Runs"
+msgstr ""
+
+#: wpcm-cricket.php:82
+msgid "Balls"
+msgstr ""
+
+#: wpcm-cricket.php:87
+msgid "Fours"
+msgstr ""
+
+#: wpcm-cricket.php:92
+msgid "Sixes"
+msgstr ""
+
+#: wpcm-cricket.php:97
+msgid "Catches"
+msgstr ""
+
+#: wpcm-cricket.php:102
+msgid "Stumpings"
+msgstr ""
+
+#: wpcm-cricket.php:107
+msgid "Balls Bowled"
+msgstr ""
+
+#: wpcm-cricket.php:112
+msgid "Maidens"
+msgstr ""
+
+#: wpcm-cricket.php:122
+msgid "Wickets"
+msgstr ""
+
+#: wpcm-cricket.php:134
+msgid "Played"
+msgstr ""
+
+#: wpcm-cricket.php:138
+msgid "Won"
+msgstr ""
+
+#: wpcm-cricket.php:142
+msgid "Draw"
+msgstr ""
+
+#: wpcm-cricket.php:146
+msgid "Lost"
+msgstr ""
+
+#: wpcm-cricket.php:150
+msgid "Points"
+msgstr ""
+
+#: wpcm-cricket.php:154
+msgid "Runs For"
+msgstr ""
+
+#: wpcm-cricket.php:158
+msgid "Runs Against"
+msgstr ""
+
+#: wpcm-cricket.php:169
+msgid "Did Not Bat"
+msgstr ""
+
+#: wpcm-cricket.php:170
+msgid "Bowled"
+msgstr ""
+
+#: wpcm-cricket.php:171
+msgid "Caught"
+msgstr ""
+
+#: wpcm-cricket.php:172
+msgid "Stumped"
+msgstr ""
+
+#: wpcm-cricket.php:173
+msgid "Lbw"
+msgstr ""
+
+#: wpcm-cricket.php:174
+msgid "Run Out"
+msgstr ""
+
+#: wpcm-cricket.php:175
+msgid "Not Out"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WPCM Cricket"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wpclubmanager.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"An extension for the WP Club Manager sports club plugin which adds extra "
+"features for cricket clubs."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WP Club Manager"
+msgstr ""
+
+#: wpcm-cricket.php:73
+msgctxt "Innings"
+msgid "I"
+msgstr ""
+
+#: wpcm-cricket.php:78
+msgctxt "Runs"
+msgid "R"
+msgstr ""
+
+#: wpcm-cricket.php:83
+msgctxt "Balls"
+msgid "B"
+msgstr ""
+
+#: wpcm-cricket.php:88
+msgctxt "Fours"
+msgid "4s"
+msgstr ""
+
+#: wpcm-cricket.php:93
+msgctxt "Sixes"
+msgid "6s"
+msgstr ""
+
+#: wpcm-cricket.php:98
+msgctxt "Catches"
+msgid "CT"
+msgstr ""
+
+#: wpcm-cricket.php:103
+msgctxt "Stumpings"
+msgid "ST"
+msgstr ""
+
+#: wpcm-cricket.php:108
+msgctxt "Balls bowled"
+msgid "BB"
+msgstr ""
+
+#: wpcm-cricket.php:113
+msgctxt "Maidens"
+msgid "M"
+msgstr ""
+
+#: wpcm-cricket.php:118
+msgctxt "Runs Against"
+msgid "R"
+msgstr ""
+
+#: wpcm-cricket.php:159
+msgctxt "Runs Against"
+msgid "RA"
+msgstr ""
+
+#: wpcm-cricket.php:123
+msgctxt "Wickets"
+msgid "W"
+msgstr ""
+
+#: wpcm-cricket.php:128
+msgctxt "Player of Match"
+msgid "POM"
+msgstr ""
+
+#: wpcm-cricket.php:135
+msgctxt "Played"
+msgid "P"
+msgstr ""
+
+#: wpcm-cricket.php:139
+msgctxt "Won"
+msgid "W"
+msgstr ""
+
+#: wpcm-cricket.php:143
+msgctxt "Draw"
+msgid "D"
+msgstr ""
+
+#: wpcm-cricket.php:147
+msgctxt "Lost"
+msgid "L"
+msgstr ""
+
+#: wpcm-cricket.php:151
+msgctxt "Points"
+msgid "Pts"
+msgstr ""
+
+#: wpcm-cricket.php:155
+msgctxt "Runs For"
+msgid "RF"
+msgstr ""
