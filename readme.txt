@@ -4,7 +4,7 @@ Tags: club management, cricket club, cricket team
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZGGZXX2EQTZ9E
 Requires at least: 4.2
 Tested up to: 6.1
-Stable tag: 1.1.3
+Stable Tag: 1.1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
