@@ -13,7 +13,7 @@
  *
  * @package   WPClubManager
  * @category  Core
- * @author    Clubpress <info@wpclubmanager.com>
+ * @author    WP Club Manager <hello@wpclubmanager.com>
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
