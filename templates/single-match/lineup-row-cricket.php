@@ -67,10 +67,10 @@ global $post; ?>
 		}
 	}
 	if( $format == 'batting' ) { ?>
-		<td><?php echo ( $value['runs'] > 0 ? round( $value['runs'] * 100 / $value['balls'], 1 ) : '0.0' ); ?></td>
+		<td><?php echo ( $value['runs'] > 0 && ! empty( $value['balls'] ) ? round( $value['runs'] * 100 / $value['balls'], 1 ) : '0.0' ); ?></td>
 	<?php
 	} else { ?>
-		<td><?php echo ( $value['runs_against'] > 0 ? round( $value['runs_against'] / balls_to_overs($value['balls_bowled']), 1 ) : '0.0' ); ?></td>
+		<td><?php echo ( $value['runs_against'] > 0 && ! empty( $value['balls_bowled'] ) ? round( $value['runs_against'] / balls_to_overs( $value['balls_bowled'] ), 1 ) : '0.0' ); ?></td>
 	<?php
 	} ?> 
 </tr>

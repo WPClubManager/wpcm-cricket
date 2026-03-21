@@ -46,14 +46,22 @@ function wpcm_cricket_player( $post ) {
 }
 
 function wpcm_cricket_save_player( $post_id ) {
+	$batting_styles = array( 'right-hand', 'left-hand' );
+	$bowling_styles = array( 'none', 'rf', 'rfm', 'rm', 'lf', 'lfm', 'lm', 'lb', 'ob', 'sla', 'slc' );
 
-	if ( isset( $_POST['_wpcm_cricket_bowling'] ) ) {
-		update_post_meta( $post_id, '_wpcm_cricket_bowling', $_POST['_wpcm_cricket_bowling'] );
-	}
-	if ( isset( $_POST['_wpcm_cricket_batting'] ) ) {
-		update_post_meta( $post_id, '_wpcm_cricket_batting', $_POST['_wpcm_cricket_batting'] );
+	if ( isset( $_POST['_wpcm_cricket_bowling'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		$bowling = sanitize_key( wp_unslash( $_POST['_wpcm_cricket_bowling'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		if ( in_array( $bowling, $bowling_styles, true ) ) {
+			update_post_meta( $post_id, '_wpcm_cricket_bowling', $bowling );
+		}
 	}
 
+	if ( isset( $_POST['_wpcm_cricket_batting'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		$batting = sanitize_key( wp_unslash( $_POST['_wpcm_cricket_batting'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		if ( in_array( $batting, $batting_styles, true ) ) {
+			update_post_meta( $post_id, '_wpcm_cricket_batting', $batting );
+		}
+	}
 }
 
 function wpcm_match_details_toss( $post ) {
@@ -69,10 +77,12 @@ function wpcm_match_details_toss( $post ) {
 }
 add_action( 'wpclubmanager_admin_match_details', 'wpcm_match_details_toss');
 
-function wpcm_match_details_toss_save( $post ) {
-
-	if ( isset( $_POST['_wpcm_cricket_match_toss'] ) ) {
-		update_post_meta( $post, '_wpcm_cricket_match_toss', $_POST['_wpcm_cricket_match_toss'] );
+function wpcm_match_details_toss_save( $post_id ) {
+	if ( isset( $_POST['_wpcm_cricket_match_toss'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		$toss = sanitize_key( wp_unslash( $_POST['_wpcm_cricket_match_toss'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+		if ( in_array( $toss, array( 'home', 'away' ), true ) ) {
+			update_post_meta( $post_id, '_wpcm_cricket_match_toss', $toss );
+		}
 	}
 }
 add_action( 'wpclubmanager_after_admin_match_save', 'wpcm_match_details_toss_save');
