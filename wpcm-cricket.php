@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WPCM Cricket
- * Version: 1.1.3
+ * Version: 1.1.4
  * Plugin URI: https://wpclubmanager.com
  * Description: An extension for the WP Club Manager sports club plugin which adds extra features for cricket clubs.
  * Author: WP Club Manager
