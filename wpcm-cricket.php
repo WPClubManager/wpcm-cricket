@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WPCM Cricket
- * Version: 1.1.3
+ * Version: 1.1.4
  * Plugin URI: https://wpclubmanager.com
  * Description: An extension for the WP Club Manager sports club plugin which adds extra features for cricket clubs.
  * Author: WP Club Manager
@@ -213,7 +213,7 @@ if ( in_array( 'wp-club-manager/wpclubmanager.php', apply_filters( 'active_plugi
 		$toss = get_post_meta( $post->ID, '_wpcm_cricket_match_toss', true ); ?>
 
 		<div class="wpcm-match-referee">
-			<?php if( $toss = 'home' ) {
+			<?php if ( 'home' === $toss ) {
 				echo __( 'Home team win toss', 'wpcm-cricket' );
 			} else {
 				echo __( 'Away team win toss', 'wpcm-cricket' );
@@ -276,8 +276,8 @@ if ( in_array( 'wp-club-manager/wpclubmanager.php', apply_filters( 'active_plugi
 
 			$count ++;
 			$home_club = get_post_meta( $match->ID, 'wpcm_home_club', true );
-			$runs = unserialize( get_post_meta( $match->ID, '_wpcm_match_runs', true ) );
-			$extras = unserialize( get_post_meta( $match->ID, '_wpcm_match_extras', true ) );
+			$runs = maybe_unserialize( get_post_meta( $match->ID, '_wpcm_match_runs', true ) );
+			$extras = maybe_unserialize( get_post_meta( $match->ID, '_wpcm_match_extras', true ) );
 			$home_goals = $runs['home'] + $extras['home'];
 			$away_goals = $runs['away'] + $extras['away'];
 

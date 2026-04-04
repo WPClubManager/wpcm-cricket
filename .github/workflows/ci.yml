@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - "**.php"
+      - ".github/workflows/ci.yml"
+  push:
+    branches:
+      - main
+      - develop
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  php-compat:
+    name: PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ["7.4", "8.0", "8.1", "8.2", "8.3"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP ${{ matrix.php }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+
+      - name: Check syntax errors
+        run: find . -name "*.php" -not -path "*/vendor/*" -not -path "*/node_modules/*" | xargs -r php -l

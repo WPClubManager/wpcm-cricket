@@ -3,8 +3,8 @@ Contributors: wpclubmanager, leonterry
 Tags: club management, cricket club, cricket team
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZGGZXX2EQTZ9E
 Requires at least: 4.2
-Tested up to: 6.1
-Stable Tag: 1.1.3
+Tested up to: 6.7
+Stable Tag: 1.1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -58,6 +58,14 @@ No. You must first install and activate the free [WP Club Manager](http://wordpr
 2. Player batting and bowling styles
 
 == Changelog ==
+
+= 1.1.4 - 4th April 2026 =
+
+* Fix: Toss display showing incorrect result
+* Fix: Division by zero on strike rate and economy rate
+* Fix: Bowling and batting style validation
+* Fix: Unsafe unserialize replaced with maybe_unserialize
+* Tweak: Tested up to WordPress 6.7
 
 = 1.1.3 - 10th February 2023 =
 

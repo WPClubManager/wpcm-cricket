@@ -1,0 +1,8 @@
+{
+  "type": "plugin",
+  "channels": {
+    "wordpress_org": true,
+    "edd": true
+  },
+  "edd_download_id": 8594
+}

@@ -1,0 +1,231 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function get_wpcm_stats_value not found\\.$#"
+			count: 1
+			path: admin/admin-match-lineup.php
+
+		-
+			message: "#^Function wpclubmanager_wp_select not found\\.$#"
+			count: 3
+			path: admin/admin-player-cricket.php
+
+		-
+			message: "#^Variable \\$badges might not be defined\\.$#"
+			count: 2
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$comp might not be defined\\.$#"
+			count: 2
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$played might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$score might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$show_comp might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$show_date might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$show_score might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$show_team might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$show_time might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$sides might not be defined\\.$#"
+			count: 2
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Variable \\$team might not be defined\\.$#"
+			count: 1
+			path: templates/content-widget-results.php
+
+		-
+			message: "#^Function wpcm_get_player_stat not found\\.$#"
+			count: 2
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$limit might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$linktext might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$player_details might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$stats might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$stats_labels might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$title might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Variable \\$type might not be defined\\.$#"
+			count: 1
+			path: templates/shortcodes/players.php
+
+		-
+			message: "#^Function wpcm_exclude_keys not found\\.$#"
+			count: 1
+			path: templates/single-match/lineup-row-cricket.php
+
+		-
+			message: "#^Function wpcm_get_player_thumbnail not found\\.$#"
+			count: 1
+			path: templates/single-match/lineup-row-cricket.php
+
+		-
+			message: "#^Variable \\$format might not be defined\\.$#"
+			count: 2
+			path: templates/single-match/lineup-row-cricket.php
+
+		-
+			message: "#^Variable \\$key might not be defined\\.$#"
+			count: 6
+			path: templates/single-match/lineup-row-cricket.php
+
+		-
+			message: "#^Variable \\$section_stats might not be defined\\.$#"
+			count: 1
+			path: templates/single-match/lineup-row-cricket.php
+
+		-
+			message: "#^Variable \\$value might not be defined\\.$#"
+			count: 3
+			path: templates/single-match/lineup-row-cricket.php
+
+		-
+			message: "#^Function get_default_club not found\\.$#"
+			count: 1
+			path: templates/single-match/scorecard.php
+
+		-
+			message: "#^Function wpclubmanager_get_template not found\\.$#"
+			count: 2
+			path: templates/single-match/scorecard.php
+
+		-
+			message: "#^Function wpcm_exclude_keys not found\\.$#"
+			count: 2
+			path: templates/single-match/scorecard.php
+
+		-
+			message: "#^Function wpcm_get_section_stats not found\\.$#"
+			count: 2
+			path: templates/single-match/scorecard.php
+
+		-
+			message: "#^Function get_player_subs_total not found\\.$#"
+			count: 1
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Function get_wpcm_stats_value not found\\.$#"
+			count: 3
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Function wpcm_divide not found\\.$#"
+			count: 1
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Function wpcm_get_player_stats_labels not found\\.$#"
+			count: 1
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Function wpcm_stats_value not found\\.$#"
+			count: 2
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Variable \\$season might not be defined\\.$#"
+			count: 2
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Variable \\$stats might not be defined\\.$#"
+			count: 8
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Variable \\$sub might not be defined\\.$#"
+			count: 1
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Variable \\$team might not be defined\\.$#"
+			count: 2
+			path: templates/single-player/stats-table.php
+
+		-
+			message: "#^Function get_wpcm_player_stats not found\\.$#"
+			count: 1
+			path: templates/single-player/stats.php
+
+		-
+			message: "#^Function wpclubmanager_get_template not found\\.$#"
+			count: 4
+			path: templates/single-player/stats.php
+
+		-
+			message: "#^Function wpcm_get_ordered_post_terms not found\\.$#"
+			count: 2
+			path: templates/single-player/stats.php
+
+		-
+			message: "#^Constant WPCM_TEMPLATE_PATH not found\\.$#"
+			count: 1
+			path: wpcm-cricket.php
+
+		-
+			message: "#^Function get_default_club not found\\.$#"
+			count: 1
+			path: wpcm-cricket.php
+
+		-
+			message: "#^Function wpclubmanager_get_template not found\\.$#"
+			count: 1
+			path: wpcm-cricket.php
