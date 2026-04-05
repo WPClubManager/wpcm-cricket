@@ -67,6 +67,7 @@ jobs:
       - name: Link and activate
         run: |
           mkdir -p /tmp/wordpress/wp-content/plugins /tmp/wordpress/wp-content/themes
+          php wp-cli.phar plugin install wp-club-manager --path=/tmp/wordpress --quiet
           ln -s ${{ github.workspace }} /tmp/wordpress/wp-content/plugins/wpcm-cricket
           php wp-cli.phar option add wpcm_sport soccer --path=/tmp/wordpress --quiet
           php wp-cli.phar option add wpcm_mode club --path=/tmp/wordpress --quiet
