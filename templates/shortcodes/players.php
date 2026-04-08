@@ -2,12 +2,14 @@
 /**
  * Players
  *
- * @author 		Clubpress
- * @package 	WPClubManager/Templates
+ * @author      Clubpress
+ * @package     WPClubManager/Templates
  * @version     1.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly ?>
 
 <div class="wpcm-players-shortcode">
 
@@ -17,58 +19,66 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 		<thead>
 			<tr>
 
-				<?php foreach( $stats as $stat ) {
+				<?php
+				foreach ( $stats as $stat ) {
 					if ( $stat !== 'subs' ) {
-                        if( $stat == 'balls_bowled' ) { ?>
+						if ( $stat == 'balls_bowled' ) {
+							?>
 
-                            <th class="<?php echo $stat; ?>"><?php _e( 'O', 'wpcm-cricket' ); ?></th>
+							<th class="<?php echo $stat; ?>"><?php _e( 'O', 'wpcm-cricket' ); ?></th>
 
 						<?php } else { ?>
-                            
-                            <th class="<?php echo $stat; ?>"><?php echo $stats_labels[$stat]; ?></th>
+							
+							<th class="<?php echo $stat; ?>"><?php echo $stats_labels[ $stat ]; ?></th>
 
-                        <?php
-                        }
-                    }
-				} ?>
+							<?php
+						}
+					}
+				}
+				?>
 
 			</tr>
 		</thead>
 		<tbody>
 
-		<?php $count = 0;
-		foreach( $player_details as $player_detail ) {
-			$count++;
+		<?php
+		$count = 0;
+		foreach ( $player_details as $player_detail ) {
+			++$count;
 			if ( $limit > 0 && $count > $limit ) {
 				break;
-			} ?>
+			}
+			?>
 
 			<tr>
 
-			<?php foreach( $stats as $stat ) {
+			<?php
+			foreach ( $stats as $stat ) {
 				if ( $stat !== 'subs' ) {
-                    if( $stat == 'balls_bowled' ) {
+					if ( $stat == 'balls_bowled' ) {
 
-                        $overs = balls_to_overs( wpcm_get_player_stat( $player_detail, 'balls_bowled' ) ); ?>
+						$overs = balls_to_overs( wpcm_get_player_stat( $player_detail, 'balls_bowled' ) );
+						?>
 
-					    <td class="<?php echo $stat; ?>">
+						<td class="<?php echo $stat; ?>">
 
-						    <?php echo $overs; ?>
+							<?php echo $overs; ?>
 
-					    </td>
+						</td>
 
-                    <?php } else { ?>
+					<?php } else { ?>
 
-                        <td class="<?php echo $stat; ?>">
+						<td class="<?php echo $stat; ?>">
 
-						    <?php echo wpcm_get_player_stat( $player_detail, $stat ); ?>
+							<?php echo wpcm_get_player_stat( $player_detail, $stat ); ?>
 
-					    </td>
+						</td>
 
-				    <?php
-                    }
-                }
-			} ?>
+						<?php
+					}
+				}
+			}
+			?>
 
 			</tr>
 

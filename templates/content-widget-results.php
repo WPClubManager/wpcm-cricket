@@ -2,12 +2,14 @@
 /**
  * Results Widget
  *
- * @author 		Clubpress
- * @package 	WPClubManager/Templates
+ * @author      Clubpress
+ * @package     WPClubManager/Templates
  * @version     1.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly ?>
 
 <li class="fixture">
 	<div class="fixture-meta">
@@ -15,8 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 			<div class="team">
 				<span><?php echo $team[0]; ?></span>
 			</div>
-		<?php }
-		if ( $show_comp ) { ?>
+			<?php
+		}
+		if ( $show_comp ) {
+			?>
 			<div class="competition">
 				<span><?php echo $comp[0]; ?>&nbsp;<?php echo $comp[2]; ?></span>
 			</div>
@@ -34,13 +38,13 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 			</h4>
 		</div>
 	</a>
-    <div class="cricket-score"><?php echo ( $played && $show_score ? $score[0] : '' ); ?></div>
+	<div class="cricket-score"><?php echo ( $played && $show_score ? $score[0] : '' ); ?></div>
 	<div class="wpcm-date">
 		<div class="kickoff">
 			<?php
-			echo ( $show_date ? the_time('j M Y') : '' ); 
+			echo ( $show_date ? the_time( 'j M Y' ) : '' );
 			echo ( $show_time ? ' - ' : '' );
-			echo ( $show_time ? the_time('g:i a') : '' );
+			echo ( $show_time ? the_time( 'g:i a' ) : '' );
 			?>
 		</div>			
 	</div>
