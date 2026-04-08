@@ -5,7 +5,8 @@ includes:
 parameters:
     level: 5
     bootstrapFiles:
-        - phpstan-stubs/wpcm.php    paths:
+        - phpstan-stubs/wpcm.php
+    paths:
         - .
     excludePaths:
         - vendor
