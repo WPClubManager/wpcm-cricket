@@ -4,7 +4,7 @@ Tags: club management, cricket club, cricket team
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZGGZXX2EQTZ9E
 Requires at least: 4.2
 Tested up to: 6.7
-Stable Tag: 1.1.4
+Stable Tag: 1.1.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -58,6 +58,10 @@ No. You must first install and activate the free [WP Club Manager](http://wordpr
 2. Player batting and bowling styles
 
 == Changelog ==
+
+= 1.1.5 - 25th May 2026 =
+
+* Tweak: Reduced plugin package size by excluding development files
 
 = 1.1.4 - 4th April 2026 =
 
