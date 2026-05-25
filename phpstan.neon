@@ -4,6 +4,8 @@ includes:
 
 parameters:
     level: 5
+    bootstrapFiles:
+        - phpstan-stubs/wpcm.php
     paths:
         - .
     excludePaths:
@@ -11,3 +13,4 @@ parameters:
         - node_modules
         - release
         - languages
+        - tests

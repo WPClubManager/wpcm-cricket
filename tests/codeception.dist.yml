@@ -1,0 +1,8 @@
+paths:
+    tests: .
+    output: _output
+    data: _data
+    support: _support
+    envs: _envs
+params:
+    - .env
